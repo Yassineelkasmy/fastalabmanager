@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "624108799140",
+    "project_id": "fastalab-manager",
+    "storage_bucket": "fastalab-manager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624108799140:android:6f47bde8ea8aee19c05231",
+        "android_client_info": {
+          "package_name": "com.fastalab.fastalabmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "624108799140-0v8pop8ir80uhiu6b3j676jh6nsae8p2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fastalab.fastalabmanager",
+            "certificate_hash": "812cb39531decba9e00fe26be3526961638ec33b"
+          }
+        },
+        {
+          "client_id": "624108799140-660bvc4jqisg75pmbjitu602ftl6l5rp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg08-gBuYF5jfS_9B_pBgMiCnzkgklZZ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "624108799140-660bvc4jqisg75pmbjitu602ftl6l5rp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

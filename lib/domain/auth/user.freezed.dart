@@ -22,9 +22,9 @@ class _$UserTearOff {
 
   _User call(
       {required String uid,
-      @JsonKey(name: "first_name") required String firstName,
-      @JsonKey(name: "last_name") required String lastName,
-      required String phone,
+      @JsonKey(name: "first_name") required String? firstName,
+      @JsonKey(name: "last_name") required String? lastName,
+      required String? phone,
       required String? image}) {
     return _User(
       uid: uid,
@@ -47,10 +47,10 @@ const $User = _$UserTearOff();
 mixin _$User {
   String get uid => throw _privateConstructorUsedError;
   @JsonKey(name: "first_name")
-  String get firstName => throw _privateConstructorUsedError;
+  String? get firstName => throw _privateConstructorUsedError;
   @JsonKey(name: "last_name")
-  String get lastName => throw _privateConstructorUsedError;
-  String get phone => throw _privateConstructorUsedError;
+  String? get lastName => throw _privateConstructorUsedError;
+  String? get phone => throw _privateConstructorUsedError;
   String? get image => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -64,9 +64,9 @@ abstract class $UserCopyWith<$Res> {
       _$UserCopyWithImpl<$Res>;
   $Res call(
       {String uid,
-      @JsonKey(name: "first_name") String firstName,
-      @JsonKey(name: "last_name") String lastName,
-      String phone,
+      @JsonKey(name: "first_name") String? firstName,
+      @JsonKey(name: "last_name") String? lastName,
+      String? phone,
       String? image});
 }
 
@@ -94,15 +94,15 @@ class _$UserCopyWithImpl<$Res> implements $UserCopyWith<$Res> {
       firstName: firstName == freezed
           ? _value.firstName
           : firstName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       lastName: lastName == freezed
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       phone: phone == freezed
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       image: image == freezed
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
@@ -118,9 +118,9 @@ abstract class _$UserCopyWith<$Res> implements $UserCopyWith<$Res> {
   @override
   $Res call(
       {String uid,
-      @JsonKey(name: "first_name") String firstName,
-      @JsonKey(name: "last_name") String lastName,
-      String phone,
+      @JsonKey(name: "first_name") String? firstName,
+      @JsonKey(name: "last_name") String? lastName,
+      String? phone,
       String? image});
 }
 
@@ -149,15 +149,15 @@ class __$UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res>
       firstName: firstName == freezed
           ? _value.firstName
           : firstName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       lastName: lastName == freezed
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       phone: phone == freezed
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       image: image == freezed
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
@@ -183,12 +183,12 @@ class _$_User implements _User {
   final String uid;
   @override
   @JsonKey(name: "first_name")
-  final String firstName;
+  final String? firstName;
   @override
   @JsonKey(name: "last_name")
-  final String lastName;
+  final String? lastName;
   @override
-  final String phone;
+  final String? phone;
   @override
   final String? image;
 
@@ -238,9 +238,9 @@ class _$_User implements _User {
 abstract class _User implements User {
   const factory _User(
       {required String uid,
-      @JsonKey(name: "first_name") required String firstName,
-      @JsonKey(name: "last_name") required String lastName,
-      required String phone,
+      @JsonKey(name: "first_name") required String? firstName,
+      @JsonKey(name: "last_name") required String? lastName,
+      required String? phone,
       required String? image}) = _$_User;
 
   factory _User.fromJson(Map<String, dynamic> json) = _$_User.fromJson;
@@ -249,12 +249,12 @@ abstract class _User implements User {
   String get uid => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: "first_name")
-  String get firstName => throw _privateConstructorUsedError;
+  String? get firstName => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: "last_name")
-  String get lastName => throw _privateConstructorUsedError;
+  String? get lastName => throw _privateConstructorUsedError;
   @override
-  String get phone => throw _privateConstructorUsedError;
+  String? get phone => throw _privateConstructorUsedError;
   @override
   String? get image => throw _privateConstructorUsedError;
   @override

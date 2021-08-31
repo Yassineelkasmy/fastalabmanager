@@ -6,18 +6,16 @@ part of 'user.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-// ignore: non_constant_identifier_names
 _$_User _$_$_UserFromJson(Map<String, dynamic> json) {
   return _$_User(
     uid: json['uid'] as String,
-    firstName: json['first_name'] as String,
-    lastName: json['last_name'] as String,
-    phone: json['phone'] as String,
+    firstName: json['first_name'] as String?,
+    lastName: json['last_name'] as String?,
+    phone: json['phone'] as String?,
     image: json['image'] as String?,
   );
 }
 
-// ignore: non_constant_identifier_names
 Map<String, dynamic> _$_$_UserToJson(_$_User instance) => <String, dynamic>{
       'uid': instance.uid,
       'first_name': instance.firstName,

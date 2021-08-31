@@ -25,4 +25,7 @@ abstract class ValueObject<T> {
 
     return o is ValueObject<T> && o.value == value;
   }
+
+  @override
+  int get hashCode => value.hashCode;
 }

@@ -28,6 +28,10 @@ class _$AuthFailureTearOff {
     return const EmailAlreadyInUse();
   }
 
+  InvalidCredentials invalidCredentials() {
+    return const InvalidCredentials();
+  }
+
   UserDisabled userDisabled() {
     return const UserDisabled();
   }
@@ -47,6 +51,7 @@ mixin _$AuthFailure {
     required TResult Function() cancelledByUser,
     required TResult Function() serverError,
     required TResult Function() emailAlreadyInUse,
+    required TResult Function() invalidCredentials,
     required TResult Function() userDisabled,
     required TResult Function() userNotVerified,
   }) =>
@@ -56,6 +61,7 @@ mixin _$AuthFailure {
     TResult Function()? cancelledByUser,
     TResult Function()? serverError,
     TResult Function()? emailAlreadyInUse,
+    TResult Function()? invalidCredentials,
     TResult Function()? userDisabled,
     TResult Function()? userNotVerified,
     required TResult orElse(),
@@ -66,6 +72,7 @@ mixin _$AuthFailure {
     required TResult Function(CancelledByUser value) cancelledByUser,
     required TResult Function(ServerError value) serverError,
     required TResult Function(EmailAlreadyInUse value) emailAlreadyInUse,
+    required TResult Function(InvalidCredentials value) invalidCredentials,
     required TResult Function(UserDisabled value) userDisabled,
     required TResult Function(UserNotVerified value) userNotVerified,
   }) =>
@@ -75,6 +82,7 @@ mixin _$AuthFailure {
     TResult Function(CancelledByUser value)? cancelledByUser,
     TResult Function(ServerError value)? serverError,
     TResult Function(EmailAlreadyInUse value)? emailAlreadyInUse,
+    TResult Function(InvalidCredentials value)? invalidCredentials,
     TResult Function(UserDisabled value)? userDisabled,
     TResult Function(UserNotVerified value)? userNotVerified,
     required TResult orElse(),
@@ -141,6 +149,7 @@ class _$CancelledByUser implements CancelledByUser {
     required TResult Function() cancelledByUser,
     required TResult Function() serverError,
     required TResult Function() emailAlreadyInUse,
+    required TResult Function() invalidCredentials,
     required TResult Function() userDisabled,
     required TResult Function() userNotVerified,
   }) {
@@ -153,6 +162,7 @@ class _$CancelledByUser implements CancelledByUser {
     TResult Function()? cancelledByUser,
     TResult Function()? serverError,
     TResult Function()? emailAlreadyInUse,
+    TResult Function()? invalidCredentials,
     TResult Function()? userDisabled,
     TResult Function()? userNotVerified,
     required TResult orElse(),
@@ -169,6 +179,7 @@ class _$CancelledByUser implements CancelledByUser {
     required TResult Function(CancelledByUser value) cancelledByUser,
     required TResult Function(ServerError value) serverError,
     required TResult Function(EmailAlreadyInUse value) emailAlreadyInUse,
+    required TResult Function(InvalidCredentials value) invalidCredentials,
     required TResult Function(UserDisabled value) userDisabled,
     required TResult Function(UserNotVerified value) userNotVerified,
   }) {
@@ -181,6 +192,7 @@ class _$CancelledByUser implements CancelledByUser {
     TResult Function(CancelledByUser value)? cancelledByUser,
     TResult Function(ServerError value)? serverError,
     TResult Function(EmailAlreadyInUse value)? emailAlreadyInUse,
+    TResult Function(InvalidCredentials value)? invalidCredentials,
     TResult Function(UserDisabled value)? userDisabled,
     TResult Function(UserNotVerified value)? userNotVerified,
     required TResult orElse(),
@@ -238,6 +250,7 @@ class _$ServerError implements ServerError {
     required TResult Function() cancelledByUser,
     required TResult Function() serverError,
     required TResult Function() emailAlreadyInUse,
+    required TResult Function() invalidCredentials,
     required TResult Function() userDisabled,
     required TResult Function() userNotVerified,
   }) {
@@ -250,6 +263,7 @@ class _$ServerError implements ServerError {
     TResult Function()? cancelledByUser,
     TResult Function()? serverError,
     TResult Function()? emailAlreadyInUse,
+    TResult Function()? invalidCredentials,
     TResult Function()? userDisabled,
     TResult Function()? userNotVerified,
     required TResult orElse(),
@@ -266,6 +280,7 @@ class _$ServerError implements ServerError {
     required TResult Function(CancelledByUser value) cancelledByUser,
     required TResult Function(ServerError value) serverError,
     required TResult Function(EmailAlreadyInUse value) emailAlreadyInUse,
+    required TResult Function(InvalidCredentials value) invalidCredentials,
     required TResult Function(UserDisabled value) userDisabled,
     required TResult Function(UserNotVerified value) userNotVerified,
   }) {
@@ -278,6 +293,7 @@ class _$ServerError implements ServerError {
     TResult Function(CancelledByUser value)? cancelledByUser,
     TResult Function(ServerError value)? serverError,
     TResult Function(EmailAlreadyInUse value)? emailAlreadyInUse,
+    TResult Function(InvalidCredentials value)? invalidCredentials,
     TResult Function(UserDisabled value)? userDisabled,
     TResult Function(UserNotVerified value)? userNotVerified,
     required TResult orElse(),
@@ -336,6 +352,7 @@ class _$EmailAlreadyInUse implements EmailAlreadyInUse {
     required TResult Function() cancelledByUser,
     required TResult Function() serverError,
     required TResult Function() emailAlreadyInUse,
+    required TResult Function() invalidCredentials,
     required TResult Function() userDisabled,
     required TResult Function() userNotVerified,
   }) {
@@ -348,6 +365,7 @@ class _$EmailAlreadyInUse implements EmailAlreadyInUse {
     TResult Function()? cancelledByUser,
     TResult Function()? serverError,
     TResult Function()? emailAlreadyInUse,
+    TResult Function()? invalidCredentials,
     TResult Function()? userDisabled,
     TResult Function()? userNotVerified,
     required TResult orElse(),
@@ -364,6 +382,7 @@ class _$EmailAlreadyInUse implements EmailAlreadyInUse {
     required TResult Function(CancelledByUser value) cancelledByUser,
     required TResult Function(ServerError value) serverError,
     required TResult Function(EmailAlreadyInUse value) emailAlreadyInUse,
+    required TResult Function(InvalidCredentials value) invalidCredentials,
     required TResult Function(UserDisabled value) userDisabled,
     required TResult Function(UserNotVerified value) userNotVerified,
   }) {
@@ -376,6 +395,7 @@ class _$EmailAlreadyInUse implements EmailAlreadyInUse {
     TResult Function(CancelledByUser value)? cancelledByUser,
     TResult Function(ServerError value)? serverError,
     TResult Function(EmailAlreadyInUse value)? emailAlreadyInUse,
+    TResult Function(InvalidCredentials value)? invalidCredentials,
     TResult Function(UserDisabled value)? userDisabled,
     TResult Function(UserNotVerified value)? userNotVerified,
     required TResult orElse(),
@@ -389,6 +409,108 @@ class _$EmailAlreadyInUse implements EmailAlreadyInUse {
 
 abstract class EmailAlreadyInUse implements AuthFailure {
   const factory EmailAlreadyInUse() = _$EmailAlreadyInUse;
+}
+
+/// @nodoc
+abstract class $InvalidCredentialsCopyWith<$Res> {
+  factory $InvalidCredentialsCopyWith(
+          InvalidCredentials value, $Res Function(InvalidCredentials) then) =
+      _$InvalidCredentialsCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class _$InvalidCredentialsCopyWithImpl<$Res>
+    extends _$AuthFailureCopyWithImpl<$Res>
+    implements $InvalidCredentialsCopyWith<$Res> {
+  _$InvalidCredentialsCopyWithImpl(
+      InvalidCredentials _value, $Res Function(InvalidCredentials) _then)
+      : super(_value, (v) => _then(v as InvalidCredentials));
+
+  @override
+  InvalidCredentials get _value => super._value as InvalidCredentials;
+}
+
+/// @nodoc
+
+class _$InvalidCredentials implements InvalidCredentials {
+  const _$InvalidCredentials();
+
+  @override
+  String toString() {
+    return 'AuthFailure.invalidCredentials()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is InvalidCredentials);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() cancelledByUser,
+    required TResult Function() serverError,
+    required TResult Function() emailAlreadyInUse,
+    required TResult Function() invalidCredentials,
+    required TResult Function() userDisabled,
+    required TResult Function() userNotVerified,
+  }) {
+    return invalidCredentials();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? cancelledByUser,
+    TResult Function()? serverError,
+    TResult Function()? emailAlreadyInUse,
+    TResult Function()? invalidCredentials,
+    TResult Function()? userDisabled,
+    TResult Function()? userNotVerified,
+    required TResult orElse(),
+  }) {
+    if (invalidCredentials != null) {
+      return invalidCredentials();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(CancelledByUser value) cancelledByUser,
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(EmailAlreadyInUse value) emailAlreadyInUse,
+    required TResult Function(InvalidCredentials value) invalidCredentials,
+    required TResult Function(UserDisabled value) userDisabled,
+    required TResult Function(UserNotVerified value) userNotVerified,
+  }) {
+    return invalidCredentials(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(CancelledByUser value)? cancelledByUser,
+    TResult Function(ServerError value)? serverError,
+    TResult Function(EmailAlreadyInUse value)? emailAlreadyInUse,
+    TResult Function(InvalidCredentials value)? invalidCredentials,
+    TResult Function(UserDisabled value)? userDisabled,
+    TResult Function(UserNotVerified value)? userNotVerified,
+    required TResult orElse(),
+  }) {
+    if (invalidCredentials != null) {
+      return invalidCredentials(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class InvalidCredentials implements AuthFailure {
+  const factory InvalidCredentials() = _$InvalidCredentials;
 }
 
 /// @nodoc
@@ -433,6 +555,7 @@ class _$UserDisabled implements UserDisabled {
     required TResult Function() cancelledByUser,
     required TResult Function() serverError,
     required TResult Function() emailAlreadyInUse,
+    required TResult Function() invalidCredentials,
     required TResult Function() userDisabled,
     required TResult Function() userNotVerified,
   }) {
@@ -445,6 +568,7 @@ class _$UserDisabled implements UserDisabled {
     TResult Function()? cancelledByUser,
     TResult Function()? serverError,
     TResult Function()? emailAlreadyInUse,
+    TResult Function()? invalidCredentials,
     TResult Function()? userDisabled,
     TResult Function()? userNotVerified,
     required TResult orElse(),
@@ -461,6 +585,7 @@ class _$UserDisabled implements UserDisabled {
     required TResult Function(CancelledByUser value) cancelledByUser,
     required TResult Function(ServerError value) serverError,
     required TResult Function(EmailAlreadyInUse value) emailAlreadyInUse,
+    required TResult Function(InvalidCredentials value) invalidCredentials,
     required TResult Function(UserDisabled value) userDisabled,
     required TResult Function(UserNotVerified value) userNotVerified,
   }) {
@@ -473,6 +598,7 @@ class _$UserDisabled implements UserDisabled {
     TResult Function(CancelledByUser value)? cancelledByUser,
     TResult Function(ServerError value)? serverError,
     TResult Function(EmailAlreadyInUse value)? emailAlreadyInUse,
+    TResult Function(InvalidCredentials value)? invalidCredentials,
     TResult Function(UserDisabled value)? userDisabled,
     TResult Function(UserNotVerified value)? userNotVerified,
     required TResult orElse(),
@@ -531,6 +657,7 @@ class _$UserNotVerified implements UserNotVerified {
     required TResult Function() cancelledByUser,
     required TResult Function() serverError,
     required TResult Function() emailAlreadyInUse,
+    required TResult Function() invalidCredentials,
     required TResult Function() userDisabled,
     required TResult Function() userNotVerified,
   }) {
@@ -543,6 +670,7 @@ class _$UserNotVerified implements UserNotVerified {
     TResult Function()? cancelledByUser,
     TResult Function()? serverError,
     TResult Function()? emailAlreadyInUse,
+    TResult Function()? invalidCredentials,
     TResult Function()? userDisabled,
     TResult Function()? userNotVerified,
     required TResult orElse(),
@@ -559,6 +687,7 @@ class _$UserNotVerified implements UserNotVerified {
     required TResult Function(CancelledByUser value) cancelledByUser,
     required TResult Function(ServerError value) serverError,
     required TResult Function(EmailAlreadyInUse value) emailAlreadyInUse,
+    required TResult Function(InvalidCredentials value) invalidCredentials,
     required TResult Function(UserDisabled value) userDisabled,
     required TResult Function(UserNotVerified value) userNotVerified,
   }) {
@@ -571,6 +700,7 @@ class _$UserNotVerified implements UserNotVerified {
     TResult Function(CancelledByUser value)? cancelledByUser,
     TResult Function(ServerError value)? serverError,
     TResult Function(EmailAlreadyInUse value)? emailAlreadyInUse,
+    TResult Function(InvalidCredentials value)? invalidCredentials,
     TResult Function(UserDisabled value)? userDisabled,
     TResult Function(UserNotVerified value)? userNotVerified,
     required TResult orElse(),
