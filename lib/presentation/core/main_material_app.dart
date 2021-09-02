@@ -8,10 +8,11 @@ Widget mainMaterialApp({required AppRouter router}) => MaterialApp.router(
       title: "FasTalab Manager",
       builder: (context, child) {
         return MediaQuery(
-          child: child!,
+          child: SafeArea(child: child!),
           data: MediaQuery.of(context).copyWith(textScaleFactor: 1),
         );
       },
       debugShowCheckedModeBanner: false,
       theme: mainThemeData(),
+      themeMode: ThemeMode.light,
     );

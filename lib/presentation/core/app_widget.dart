@@ -7,10 +7,18 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../injection.dart';
 
-class AppWidget extends StatelessWidget {
+class AppWidget extends StatefulWidget {
   AppWidget({Key? key}) : super(key: key);
+
+  @override
+  _AppWidgetState createState() => _AppWidgetState();
+}
+
+class _AppWidgetState extends State<AppWidget> {
   final routerKey = GlobalKey<NavigatorState>();
+
   final screenUtilKey = GlobalKey();
+
   @override
   Widget build(BuildContext context) {
     final _appRouter = AppRouter(routerKey);

@@ -24,8 +24,10 @@ class AppRouter extends _i1.RootStackRouter {
         }),
     LoginScreenRoute.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
-        builder: (_) {
-          return const _i4.LoginScreen();
+        builder: (data) {
+          final args = data.argsAs<LoginScreenRouteArgs>(
+              orElse: () => const LoginScreenRouteArgs());
+          return _i4.LoginScreen(key: args.key);
         }),
     UserCheckScreenRoute.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
@@ -48,10 +50,18 @@ class SplashScreenRoute extends _i1.PageRouteInfo {
   static const String name = 'SplashScreenRoute';
 }
 
-class LoginScreenRoute extends _i1.PageRouteInfo {
-  const LoginScreenRoute() : super(name, path: '/login-screen');
+class LoginScreenRoute extends _i1.PageRouteInfo<LoginScreenRouteArgs> {
+  LoginScreenRoute({_i2.Key? key})
+      : super(name,
+            path: '/login-screen', args: LoginScreenRouteArgs(key: key));
 
   static const String name = 'LoginScreenRoute';
+}
+
+class LoginScreenRouteArgs {
+  const LoginScreenRouteArgs({this.key});
+
+  final _i2.Key? key;
 }
 
 class UserCheckScreenRoute extends _i1.PageRouteInfo {
